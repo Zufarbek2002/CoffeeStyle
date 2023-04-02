@@ -1,0 +1,69 @@
+@import "./variables";
+#footer{
+    .footer_section{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_boxes{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        @media (max-width:700px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .footer_box{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
+    h1{
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        line-height: 2px;
+        font-weight: 400;
+    }
+    p{
+        color: $TextColor;
+        opacity: 70%;
+        line-height: 22px;
+    }
+    .logo{
+        width: 258px;
+        margin-right: 35px;
+    }
+    .menu{
+        width: 146px;
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        a{
+            color: $TextColor;
+            opacity: 70%;
+        }
+    }
+    .contact{
+        width: 300xp;
+    }
+    h2{
+        font-size: 1.65rem;
+        font-weight: 400;
+        color: $TextColor;
+    }
+    .footer_text{
+        display: flex;
+        justify-content: space-between;
+        h1{
+            text-transform: capitalize;
+            font-size: 1.15rem;
+            color: $TextColor;
+            opacity: 30%;
+        }
+    }
+    
+}

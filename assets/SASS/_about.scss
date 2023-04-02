@@ -1,0 +1,43 @@
+@import "./variables";
+#about{
+    margin: 120px 0 100px;
+    .about_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 658px;
+        row-gap: 20px;
+        text-align: center;
+        line-height: 40px;
+        @media (max-width:700px) {
+            width: 85%;
+        }
+        @media (max-width:400px) {
+            width: 90%;
+        }
+    }
+    h1{
+        font-size: 2rem;
+        font-weight: 400;
+        color: $TextColor;
+        padding: 0 40px;
+        @media (max-width:610px) {
+            padding: 0;
+        }
+    }
+    p{
+        color: $TextColor;
+        opacity: 70%;
+        font-size: 1.15rem;
+        font-weight: 400;
+    }
+    a{
+        color: $TextColor;
+        &:hover{
+            color: $extraColor;
+            border-bottom: 1px solid $extraColor;
+            transition: all .6s;
+        }
+    }
+
+}

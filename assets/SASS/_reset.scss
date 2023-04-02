@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap');
+@import "./variables";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+}
+.container{
+    width: 62%;
+    margin: 0 auto;
+    max-width: 1440px;
+    @media (max-width: 1090px) {
+        width: 70%;
+    }
+    @media (max-width: 1000px) {
+        width: 75%;
+    }
+    @media (max-width: 950px) {
+        width: 85%;
+    }
+}
+h4{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: $TextColor;
+    text-transform: uppercase;
+    padding-bottom: 100px;
+    position: relative;
+    text-align: center;
+    &::before{
+        position: absolute;
+        content: "";
+        background-color: #ECECED;
+        height: 1px;
+        width: 30px;
+        left: -45px;
+        top: 7.5px;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        background-color: #ECECED;
+        height: 1px;
+        width: 30px;
+        right: -45px;
+        top: 7.5px;
+    }
+}
+.break{
+    @media (max-width:450px) {
+        width: 80%;
+    }
+}
+.box_text{
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding-top: 30px;
+    color: $TextColor;
+    @media (max-width:700px) {
+        padding-top: 10px;
+    }
+    @media (max-width:300px) {
+        padding-top: 0;
+        font-size: 1rem;
+    }
+}
+.money{
+    color: $TextColor;
+    opacity: 70%;
+    font-size: 1.15rem;
+    font-weight: 400;
+    span{
+        color: $extraColor;
+        font-size: 1.35rem;
+    }
+    .delete{
+        padding-left: 10px;
+        color: $TextColor;
+        opacity: 40%;
+        text-decoration: line-through;
+    }
+}
